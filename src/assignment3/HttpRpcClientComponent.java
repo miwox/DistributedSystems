@@ -6,8 +6,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.Builder;
 import java.net.http.HttpResponse;
-import javax.json.Json;
-import javax.json.JsonObject;
 
 public class HttpRpcClientComponent {
 
@@ -21,6 +19,7 @@ public class HttpRpcClientComponent {
   public static void requestSize() throws IOException, InterruptedException {
     HttpClient client = HttpClient.newHttpClient();
     HttpRequest request = getBuilder().GET().build();
+    System.out.println(request.toString());
     HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
     System.out.println(response.body());
   }
@@ -32,7 +31,10 @@ public class HttpRpcClientComponent {
     System.out.println(response.body());
   }
 
-  public static void updateRecord(int index, String name) {
-
+  public static void updateRecord(int index, String name) throws IOException, InterruptedException {
+    HttpClient client = HttpClient.newHttpClient();
+    //Hier den Body einfügen :)
+    HttpRequest request = getBuilder().POST(HttpRequest.BodyPublishers.ofString("Gallo")).build();
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
   }
 }
