@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="glassfish.jakarta.json" type="repository">
+    <properties maven-id="org.glassfish:jakarta.json:1.1.6" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jakarta.json-1.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

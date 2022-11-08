@@ -6,6 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.Builder;
 import java.net.http.HttpResponse;
+import javax.json.Json;
+import javax.json.JsonObject;
 
 public class HttpRpcClientComponent {
 
@@ -28,5 +30,9 @@ public class HttpRpcClientComponent {
     HttpRequest request = getBuilder().GET().setHeader("value", "" + index).build();
     HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
     System.out.println(response.body());
+  }
+
+  public static void updateRecord(int index, String name) {
+
   }
 }
