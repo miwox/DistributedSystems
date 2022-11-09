@@ -5,6 +5,8 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.json-api-1.1.4.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/javax.json-api-1.1.4-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
