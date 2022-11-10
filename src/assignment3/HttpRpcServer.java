@@ -5,8 +5,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.Map;
-import javax.json.Json;
-import javax.json.JsonObject;
+
 
 public class HttpRpcServer {
 
@@ -27,7 +26,7 @@ public class HttpRpcServer {
     database.put(index, name);
   }
 
-  public static JsonObject getRecord(int index) {
-    return Json.createObjectBuilder().add("" + index, database.get(index)).build();
+  public static String getRecord(int index) {
+    return database.get(index);
   }
 }

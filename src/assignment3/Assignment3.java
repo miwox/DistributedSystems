@@ -15,12 +15,8 @@ public class Assignment3 {
     HttpRpcClientComponent.addRecord(4, "Bayern");
     HttpRpcClientComponent.addRecord(5, "Muenchen");
     HttpRpcClientComponent.addRecord(6, "Muenchen");
+    HttpRpcClientComponent.getRecord(6);
     HttpRpcClientComponent.getSize();
-
-
-
-
-
   }
 }
 
