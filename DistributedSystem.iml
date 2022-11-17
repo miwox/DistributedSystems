@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javax.json.api" level="project" />
     <orderEntry type="library" name="glassfish.jakarta.json" level="project" />
+    <orderEntry type="library" name="protobuf-java-3.18.1" level="project" />
   </component>
 </module>

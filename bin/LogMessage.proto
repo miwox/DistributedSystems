@@ -1,0 +1,16 @@
+syntax = "proto2";
+import "google/protobuf/timestamp.proto";
+message Message {
+    required google.protobuf.Timestamp time = 1;
+    optional string creator = 2;
+    required SecurityLevel type = 3;
+    required string body = 4;
+
+    enum SecurityLevel {
+        DEBUG = 0;
+        INFO = 1;
+        WARN = 2;
+        ERROR = 3;
+        FATAL = 4;
+     }
+}
