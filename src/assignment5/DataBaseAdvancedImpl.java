@@ -7,11 +7,11 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class DataBaseImpl implements DatabaseAdvanced {
+public class DataBaseAdvancedImpl implements DatabaseAdvanced {
 
   private final Map<Integer, String> database;
 
-  public DataBaseImpl() {
+  public DataBaseAdvancedImpl() {
     database = new HashMap<>();
   }
 

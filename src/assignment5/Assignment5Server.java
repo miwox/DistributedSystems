@@ -1,10 +1,8 @@
 package assignment5;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.rmi.Remote;
 import java.rmi.server.UnicastRemoteObject;
@@ -19,7 +17,7 @@ public class Assignment5Server {
 
   public static void main(String[] args) throws IOException, ClassNotFoundException {
     // initiate a server and publish it to file
-    DataBaseImpl obj = new DataBaseImpl();
+    DataBaseAdvancedImpl obj = new DataBaseAdvancedImpl();
     Remote stub = UnicastRemoteObject.exportObject(obj, PORT);
     System.err.println("Server ready");
     writeStubToFile(FILENAME, stub);

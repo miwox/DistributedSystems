@@ -25,6 +25,8 @@ public class Assigment5Client {
 
     System.out.println(client.getRecordObj(4).getKey());
     System.out.println(client.getRecordObj(4).getValue());
+    DBResult result = client.getRecordObj(4);
+    result.setValue("sdsd");
   }
 
   private static DatabaseAdvanced readStubFromFile(String fileName)
